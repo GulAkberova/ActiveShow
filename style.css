@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #b7d0d2;
+    background-color: #507d81;
+}
+.h1{
+    color: white;
+}
+.bigDiv{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.slider{
+    width: 100%;
+    height: 400px;
+    margin:0px  auto;
+    position:relative;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    padding: 10px 10px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 99;
+    border: none;
+}
+#next{
+    left: unset;
+    right: 10px;
+}
+.show{
+    opacity: 1 !important;
+    transition: 1s !important;
+}
+
+p{
+    padding: 20px 0px;
+    opacity: 0;
+    transition: 0.8s;
+}
+.showAll{
+    opacity: 1 !important;
+    transition: 0.8s !important;
+
+
+}
+#images{
+    opacity: 0;
+    transition: 0.8s;
+
+}
+#btn1,#btn2{
+    padding: 9px 20px;
+    border-radius: 25px;
+    background-color: transparent;
+    background-color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 10px;
+
+}
+.hover{
+    background-color: black !important;
+    border: 1px solid black !important;
+    color: white;
+    transition: 1s;
+}
+.hover1{
+    background-color: black !important;
+    border: 1px solid black !important;
+
+    color: white;
+    transition: 1s;
+}
+
+
+
+
+
+
+span{
+    display: none;
+    transition: 1s;
+}
+.showUl span{
+   display: block;
+   transition: 1s;
+}
+ul{
+    margin: 40px;
+}
+ul li{
+    position: relative;
+    cursor: pointer;
+}
+ul li::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: -19px;
+    width: 15px;
+    height: 15px;
+    background-image: url("https://coders-performance.fra1.digitaloceanspaces.com/codersEducation-static-files/img/why-us-arrow.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+
+}
+.showUl::before{
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
